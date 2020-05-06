@@ -7,6 +7,7 @@ pipeline {
   stages{
     stage("build"){
       steps{
+        sh "chmod +x ./scripts/dropdb.sh"
         sh "npm install"
       }
     }
